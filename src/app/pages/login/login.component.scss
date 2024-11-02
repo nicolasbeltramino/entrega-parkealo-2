@@ -1,0 +1,83 @@
+@use "../../../../public/styles/colores.scss/colores.scss";
+
+main {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f9;
+  align-items: center;
+  justify-content: center;
+}
+
+#login-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 450px; 
+  padding: 3rem;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+h1 {
+  color: #fbb03b;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 1rem;
+  border: 2px solid #e07a5f;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #3d405b;
+  background-color: #f4f4f9;
+}
+
+button {
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  background-color: #e07a5f; 
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(224, 122, 95, 0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background-color: #c85c5c;
+}
+
+.boton-registro {
+  background-color: #fbb03b;
+}
+
+.boton-registro:hover {
+  background-color: #f29d35;
+}
+
+.parrafo-b {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #3d405b;
+  max-width: 380px;
+}
